@@ -18,6 +18,16 @@ body {
 img {
     max-width: 100%;
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /* COMMON */
 .container {
     max-width: 80%;
@@ -32,7 +42,6 @@ img {
 
 .card {
     width: calc(100% / 3);
-    padding: 30px;
 
     /* debug */
     /* min-height: 200px;
@@ -42,7 +51,7 @@ img {
 
 .card img {
     width: 400px;
-    height: 580px;
+    min-height: 580px;
 }
 
 .brand-title {
@@ -58,6 +67,14 @@ img {
     margin-top: 20px;
 }
 
+.m-0 {
+    margin: 0;
+}
+
+.flex li {
+    margin: 0 20px;
+}
+/* POSITION */
 .relative {
     position: relative;
 }
@@ -104,7 +121,46 @@ img {
     background-color: white;
 }
 
+/* FLEX */
+.flex {
+    display: flex;
+    justify-content: center;
+    
+}
 
+.list {
+    width: calc(100% / 3);
+    
+    /* debug */
+    /* border: 1px solid black; */
+}
+
+.flex ul {
+    margin-top: 30px;
+    /* debug */
+    /* border: 1px solid green; */
+}
+
+
+/* HEADER */
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #ff6900;
+
+    /* debug */
+    min-height: 100px;
+}
+.nav .container {
+    width: 100%;
+    /* debug */
+    /* background-color: lightblue; */
+    /* border: 1px solid black; */
+}
+.nav-img {
+    /* width: 100%; */
+}
 
 /* MAIN */
 .card:hover .hidden {
